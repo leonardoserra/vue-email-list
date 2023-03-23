@@ -5,3 +5,36 @@
 }
 
 
+body{
+    font-family: sans-serif;
+    color:rgb(57, 57, 57);
+}
+
+.container{
+    width: 500px;
+    margin: auto;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.container h1{
+    padding: 10px;
+    border-radius: 5px;
+    background-color: rgb(255, 239, 115);
+    box-shadow: 5px -5px rgb(57, 57, 57);
+    margin-bottom: 30px;
+}
+
+.inputField{
+    padding-top: 10px;
+}
+
+.inputField input{
+    
+}
+
+.error{
+    padding-top: 5px;
+    color: rgb(255, 71, 71);
+}
+
