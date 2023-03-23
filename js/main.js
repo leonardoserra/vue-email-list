@@ -15,12 +15,20 @@ const { createApp } = Vue
       }
     },
     mounted(){
+    for(i=0;i<10;i++){
         axios.get('https://flynn.boolean.careers/exercises/api/random/mail')
             .then((response)=> {
-                element = response.data.response;
-                this.results.push(element)
+                
+               
+                    let element = response.data.response
+                    this.results.push(element);
+                    element = '';
+                
         });
+    }
         console.log(this.results);
     }
 
   }).mount('#app')
+
+  /*prendi il dato e pushalo sull array dieci volte... come fai? */
