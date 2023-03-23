@@ -19,12 +19,8 @@ const { createApp } = Vue
             .then((response)=> {
                 element = response.data.response;
                 this.results.push(element)
-                
-                if(this.results.length < 10){
-                    this.results.push(element);
-                }
-            
         });
         console.log(this.results);
     }
+
   }).mount('#app')
