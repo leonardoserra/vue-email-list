@@ -19,6 +19,7 @@ const { createApp } = Vue
     methods:{
       generator(){
         this.results = [];
+        this.error = '';
         if(this.numberOfMails < 0){
           this.numberOfMails = 0;
           this.error = 'ATTENZIONE: non inserire numeri sotto lo zero';

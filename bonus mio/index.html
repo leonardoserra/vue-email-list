@@ -19,7 +19,7 @@
                     <button @click="generator()">Genera</button>    
                 </div>
     
-                <div v-for="result in results" v-if="results.length == numberOfMails">
+                <div class="generated-mail" v-for="result in results" v-if="results.length == numberOfMails">
                     {{ result }}
                 </div>
                 <div class="error" v-if="error">{{ error }}</div>

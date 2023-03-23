@@ -29,8 +29,18 @@ body{
     padding-top: 10px;
 }
 
-.inputField input{
-    
+.inputField input, .inputField button{
+    display: inline-block;
+    width: 200px;
+    height: 50px;
+    font-size: 40px;
+   
+
+}
+
+.generated-mail{
+    font-size: 20px;
+    margin: 10px 0;
 }
 
 .error{
