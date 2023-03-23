@@ -11,13 +11,20 @@ const { createApp } = Vue
   createApp({
     data() {
       return {
-        
+        results: []
       }
     },
     mounted(){
         axios.get('https://flynn.boolean.careers/exercises/api/random/mail')
-            .then(function(response) {
-            const result = response.data;
+            .then((response)=> {
+                element = response.data.response;
+                this.results.push(element)
+                
+                if(this.results.length < 10){
+                    this.results.push(element);
+                }
+            
         });
+        console.log(this.results);
     }
   }).mount('#app')
