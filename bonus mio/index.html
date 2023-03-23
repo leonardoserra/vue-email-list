@@ -16,7 +16,6 @@
             <button @click="generator()">Genera</button>
             <div v-for="result in results" v-if="results.length == numberOfMails">
                 {{ result }}
-                <span v-if="error.length">{{error}}</span>
             </div>
         </div>
 
