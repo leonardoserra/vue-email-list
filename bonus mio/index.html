@@ -15,7 +15,7 @@
                 <h1>Generatore mail casuali</h1>
                 <label for="mailQuantity">Quante Mail vuoi Generare?</label>
                 <div class="inputField">
-                    <input type="number" id="mailQuantity" v-model="numberOfMails" placeholder="inserisci numero di mail da generare"/>
+                    <input type="number" id="mailQuantity" v-model="numberOfMails" min="0" />
                     <button @click="generator()">Genera</button>    
                 </div>
     
