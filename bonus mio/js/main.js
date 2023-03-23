@@ -21,7 +21,7 @@ const { createApp } = Vue
         this.results = [];
         if(this.numberOfMails < 0){
           this.numberOfMails = 0;
-          alert('ATTENZIONE: non inserire numeri sotto lo zero');
+          this.error = 'ATTENZIONE: non inserire numeri sotto lo zero';
           console.log(this.error)
           console.log(this.numberOfMails)
         }else{

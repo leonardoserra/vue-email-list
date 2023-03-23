@@ -11,12 +11,16 @@
     <body>
        
         <div id="app">
+
             <h1>Generatore mail casuali</h1>
             <input type="number" v-model="numberOfMails" placeholder="inserisci numero di mail da generare"/>
             <button @click="generator()">Genera</button>
+
             <div v-for="result in results" v-if="results.length == numberOfMails">
                 {{ result }}
             </div>
+            <div v-if="error">{{ error }}</div>
+            
         </div>
 
 
